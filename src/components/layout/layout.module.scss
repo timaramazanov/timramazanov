@@ -1,0 +1,31 @@
+:root {
+  --light: #F5F5F5;
+  --highlight: #F05454;
+  --util: #30475E;
+  --dark: #121212;
+
+  --text-color: var(--dark);
+  --bg-color: var(--light)
+}
+
+html[data-theme-dark] {
+  --text-color: var(--light);
+  --bg-color: var(--dark)
+}
+
+* {
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
+  font-family: Open Sans;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color)
+}
+
+a {
+  color: var(--highlight)
+}
